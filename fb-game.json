@@ -1,0 +1,51 @@
+{
+  "modules": {
+    "f_member": {
+      "class": {
+        "insert": true,
+        "edit": true,
+        "delete": true,
+        "list": true,
+        "search": true,
+        "model": {
+          "first_name": {
+            "type": "string",
+            "max_length": 50,
+            "validate": true,
+            "sample_value": "mr.nattakit"
+          },
+          "password": {
+            "type": "string",
+            "max_length": 15,
+            "validate": true,
+            "sample_value": "11223344"
+          },
+          "email": {
+            "type": "string",
+            "max_length": 50,
+            "validate": true,
+            "sample_value": "nattakitu29@gmail.com"
+          }
+        }
+      }
+    },
+    "b_coin_management": {
+      "class": {
+        "insert": true,
+        "edit": true,
+        "delete": true,
+        "list": true,
+        "search": true,
+        "model": {
+          "first_name": {
+            "type": "string",
+            "max_length": 50,
+            "validate": true,
+            "sample_value": "bo coin management"
+          }
+        }
+      }
+    }
+  },
+  "description": "fb-game v1.9"
+}

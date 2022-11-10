@@ -1,51 +1,193 @@
 {
-  "modules": {
-    "f_member": {
-      "class": {
-        "insert": true,
-        "edit": true,
-        "delete": true,
-        "list": true,
-        "search": true,
-        "model": {
-          "first_name": {
-            "type": "string",
-            "max_length": 50,
-            "validate": true,
-            "sample_value": "mr.nattakit"
-          },
-          "password": {
-            "type": "string",
-            "max_length": 15,
-            "validate": true,
-            "sample_value": "11223344"
-          },
-          "email": {
-            "type": "string",
-            "max_length": 50,
-            "validate": true,
-            "sample_value": "nattakitu29@gmail.com"
+    "modules": {
+      "bo_member_management": {
+        "class": {
+          "insert": true,
+          "edit": true,
+          "delete": true,
+          "list": true,
+          "search": true,
+          "model": {
+            "username": {
+                "type": "string",
+                "max_length": 50,
+                "validate": true,
+                "sample_value": "tester01"
+              },
+            "password": {
+                "type": "string",
+                "max_length": 50,
+                "validate": true,
+                "sample_value": "pass112233"
+            },
+            "first_name": {
+                "type": "string",
+                "max_length": 50,
+                "validate": true,
+                "sample_value": "mr.tester"
+            },
+            "last_name": {
+                "type": "string",
+                "max_length": 50,
+                "validate": true,
+                "sample_value": "programer"
+            },
+            "email": {
+                "type": "string",
+                "max_length": 50,
+                "validate": true,
+                "sample_value": "nattakitu29@gmail.com"
+            },
+            "phone": {
+                "type": "string",
+                "max_length": 50,
+                "validate": true,
+                "sample_value": "0123456789"
+            },
+            "chat_id": {
+                "type": "string",
+                "max_length": 50,
+                "validate": false,
+                "sample_value": ""
+            },
+            "dob": {
+                "type": "date",
+                "max_length": 50,
+                "validate": true,
+                "sample_value": "2000-01-31"
+            },
+            "profile_image": {
+                "type": "string",
+                "max_length": 50,
+                "validate": false,
+                "sample_value": ""
+            },
+            "personal_text": {
+                "type": "string",
+                "max_length": 50,
+                "validate": false,
+                "sample_value": ""
+            },
+            "user_type": {
+                "type": "int",
+                "max_length": 50,
+                "validate": true,
+                "sample_value": 1
+            }
+          }
+        }
+      },
+      "bo_coin_order_management": {
+        "class": {
+          "insert": true,
+          "edit": true,
+          "delete": true,
+          "list": true,
+          "search": true,
+          "model": {
+            "username": {
+                "type": "string",
+                "max_length": 50,
+                "validate": false,
+                "sample_value": "tester01"
+            },
+            "order_date_from": {
+                "type": "date",
+                "max_length": 50,
+                "validate": false,
+                "sample_value": "2022-01-01"
+            },
+            "order_date_to": {
+                "type": "date",
+                "max_length": 50,
+                "validate": false,
+                "sample_value": "2022-01-31"
+            },
+            "status": {
+                "type": "int",
+                "max_length": 50,
+                "validate": false,
+                "sample_value": 1
+            },
+            "per_page": {
+                "type": "int",
+                "max_length": 50,
+                "validate": false,
+                "sample_value": 500
+            },
+            "page_no": {
+                "type": "int",
+                "max_length": 50,
+                "validate": false,
+                "sample_value": 1
+            }
+          }
+        }
+      },
+      "bo_league_management":{
+        "class": {
+            "insert": true,
+            "edit": true,
+            "delete": true,
+            "list": true,
+            "search": true,
+            "model": {
+              "name": {
+                "type": "string",
+                "max_length": 50,
+                "validate": true,
+                "sample_value": "tester01"
+            },
+            "is_active": {
+                "type": "string",
+                "max_length": 50,
+                "validate": true,
+                "sample_value": "Active"
+            }
+          }
+        }
+      },
+      "bo_match_management":{
+        "class": {
+            "insert": true,
+            "edit": true,
+            "delete": true,
+            "list": true,
+            "search": true,
+            "model": {
+              "dob_from": {
+                "type": "date",
+                "max_length": 50,
+                "validate": false,
+                "sample_value": "2000-01-01"
+            },
+              "dob_to": {
+                "type": "date",
+                "max_length": 50,
+                "validate": false,
+                "sample_value": "2000-01-31"
+            },
+              "status": {
+                "type": "int",
+                "max_length": 50,
+                "validate": false,
+                "sample_value": 1
+            },
+              "per_page": {
+                "type": "int",
+                "max_length": 50,
+                "validate": false,
+                "sample_value": 500
+            },
+              "page_no": {
+                "type": "int",
+                "max_length": 50,
+                "validate": false,
+                "sample_value": 1
+            }
           }
         }
       }
     },
-    "b_coin_management": {
-      "class": {
-        "insert": true,
-        "edit": true,
-        "delete": true,
-        "list": true,
-        "search": true,
-        "model": {
-          "first_name": {
-            "type": "string",
-            "max_length": 50,
-            "validate": true,
-            "sample_value": "bo coin management"
-          }
-        }
-      }
-    }
-  },
-  "description": "fb-game v1.9"
-}
+    "description": "fb-game v1.9"
+  }

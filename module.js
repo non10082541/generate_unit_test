@@ -161,22 +161,31 @@ class modules{
         }
     }
 
-    async execute(module_name, fields, insert, edit, del, list, search) {
+    async execute(data) {
         
-        this.module_name = module_name;
-        // console.log('module : ', this.module_name)
+        this.module_name = data.name;
         console.log('module : ' + this.module_name);
+
+        this.insert = data.insert;
+        console.log("insert:", this.insert)
+
+        this.edit = data.edit;
+        console.log("edit:", this.edit)
+
+        this.delete = data.delete;
+        console.log("delete:", this.delete)
+
+        this.list = data.list;
+        console.log("list:", this.list)
         
-        this.fields = fields;
-        console.log(this.fields)
+        this.search = data.search;
+        console.log("search:", this.search)
 
-        this.insert = insert;
-        this.update = edit;
-        this.delete = del;
-        this.list = list;
-        this.search = search;
+        this.fields = data.model;
+        console.log("fields:", this.fields);
 
-        console.log("execute func")
+
+        // console.log("execute func")
 
         await obj_data_model.set_field(this.fields);
 

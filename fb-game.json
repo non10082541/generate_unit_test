@@ -108,6 +108,7 @@
     "delete": true,
     "list": true,
     "search": true,
+    "python_model": "Coin_orders",
     "model": 
     [
       {
@@ -168,6 +169,7 @@
     "delete": true,
     "list": true,
     "search": true,
+    "python_model": "Leagues",
     "model": 
     [
       {
@@ -196,6 +198,7 @@
     "delete": true,
     "list": true,
     "search": true,
+    "python_model": "Matches",
     "model": 
     [
       {
@@ -248,6 +251,7 @@
     "delete": true,
     "list": true,
     "search": true,
+    "python_model": "Tickets",
     "model": 
     [
       {
@@ -300,6 +304,7 @@
     "delete": true,
     "list": true,
     "search": true,
+    "python_model": "Member",
     "model": 
     [
       {
@@ -357,46 +362,6 @@
         "max_length": 10,
         "validate": false,
         "sample_value": 1
-      }
-    ]
-  },
-  {
-    "id": 7,
-    "name": "",
-    "insert": true,
-    "edit": true,
-    "delete": true,
-    "list": true,
-    "search": true,
-    "model": 
-    [
-      {
-        "id": 1,
-        "field_name": "",
-        "type": "",
-        "max_length": 50,
-        "validate": false,
-        "sample_value": ""
-      }
-    ]
-  },
-  {
-    "id": 8,
-    "name": "",
-    "insert": true,
-    "edit": true,
-    "delete": true,
-    "list": true,
-    "search": true,
-    "model": 
-    [
-      {
-        "id": 1,
-        "field_name": "",
-        "type": "",
-        "max_length": 50,
-        "validate": false,
-        "sample_value": ""
       }
     ]
   }
